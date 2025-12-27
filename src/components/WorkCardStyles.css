@@ -1,0 +1,121 @@
+.work-container {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #1e1e2f, #151522);
+}
+
+.project-heading {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+.project-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 2rem;
+    justify-content: center;
+}
+
+/* Card Styling with Glassmorphism */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1.8rem;
+    text-align: center;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hover Effect: Scale and Glow */
+.project-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Image Styling */
+.project-card img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Title Styling */
+.project-title {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Description */
+.pro-details p {
+    color: #c5c5c5;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+/* Buttons Container */
+.pro-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* View Button: Gradient and Hover Effect */
+.btn:first-child {
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: #000;
+}
+
+.btn:first-child:hover {
+    background: linear-gradient(45deg, #ff9900, #ff6600);
+    box-shadow: 0px 0px 15px rgba(255, 153, 0, 0.7);
+}
+
+/* Source Button: Dark with Glow */
+.source-btn {
+    background: linear-gradient(45deg, #222, #444);
+    color: white;
+}
+
+.source-btn:hover {
+    background: linear-gradient(45deg, #444, #666);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive: Mobile View */
+@media screen and (max-width: 740px) {
+    .project-container {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+        padding: 1rem;
+    }
+}

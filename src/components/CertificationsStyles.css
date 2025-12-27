@@ -1,0 +1,416 @@
+.certifications-page {
+  padding: 4rem 2rem;
+  background: #0a192f;
+  min-height: 70vh;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.certifications-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.certifications-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header-icon {
+  font-size: 3rem;
+  color: #64ffda;
+  margin-bottom: 0.5rem;
+}
+
+.certifications-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #64ffda;
+}
+
+.subtitle {
+  color: #8892b0;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Certifications Grid */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.certification-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Container */
+.cert-image-container {
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.cert-image:hover {
+  transform: scale(1.05);
+}
+
+/* Certification Content */
+.cert-content {
+  padding: 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  color: #e6f1ff;
+  line-height: 1.3;
+}
+
+.issuer-name {
+  color: #64ffda;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.cert-meta {
+  margin-bottom: 0.8rem;
+}
+
+.year {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #8892b0;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+}
+
+.description {
+  color: #a8b2d1;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+/* Card Footer */
+.card-footer {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: auto;
+}
+
+.view-btn, .preview-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  justify-content: center;
+}
+
+.view-btn {
+  background: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
+  border: 1px solid rgba(100, 255, 218, 0.3);
+}
+
+.preview-btn {
+  background: rgba(77, 171, 247, 0.1);
+  color: #4dabf7;
+  border: 1px solid rgba(77, 171, 247, 0.3);
+}
+
+.view-btn:hover {
+  background: rgba(100, 255, 218, 0.2);
+  transform: translateY(-2px);
+}
+
+.preview-btn:hover {
+  background: rgba(77, 171, 247, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Resume Section */
+.resume-section {
+  margin-bottom: 3rem;
+}
+
+.resume-card {
+  background: rgba(100, 255, 218, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.resume-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.resume-icon {
+  font-size: 2.5rem;
+  color: #64ffda;
+  flex-shrink: 0;
+}
+
+.resume-info {
+  flex: 1;
+}
+
+.resume-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #e6f1ff;
+}
+
+.resume-info p {
+  color: #8892b0;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+.resume-buttons {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.download-btn, .view-resume-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  font-size: 0.9rem;
+}
+
+.download-btn {
+  background: #64ffda;
+  color: #0a192f;
+}
+
+.view-resume-btn {
+  background: transparent;
+  color: #64ffda;
+  border: 2px solid #64ffda;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(100, 255, 218, 0.2);
+}
+
+.view-resume-btn:hover {
+  background: rgba(100, 255, 218, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Modal Styles */
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content-wrapper {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 0.4s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+.modal-caption {
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 15px;
+  text-align: center;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certifications-page {
+    padding: 3rem 1.5rem;
+  }
+  
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  
+  .resume-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+  }
+  
+  .certifications-header {
+    margin-bottom: 2rem;
+  }
+  
+  .certifications-header h1 {
+    font-size: 2rem;
+  }
+  
+  .header-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .resume-card {
+    padding: 1.5rem;
+  }
+  
+  .cert-image-container {
+    height: 160px;
+  }
+  
+  .card-footer {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  
+  .view-btn, .preview-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .certifications-page {
+    padding: 2rem 1rem;
+  }
+  
+  .cert-content {
+    padding: 1rem;
+  }
+  
+  .modal-content-wrapper {
+    max-width: 95%;
+  }
+  
+  .resume-buttons {
+    flex-direction: column;
+  }
+  
+  .download-btn, .view-resume-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .cert-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .description {
+    font-size: 0.85rem;
+  }
+}

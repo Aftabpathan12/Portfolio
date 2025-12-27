@@ -1,0 +1,199 @@
+.footer {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+    padding: 4rem 0 2rem;
+    border-top: 4px solid #4dabf7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+}
+
+.footer-section {
+    padding: 1rem;
+}
+
+.footer-title {
+    font-size: 1.8rem;
+    color: #4dabf7;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(77, 171, 247, 0.3);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    font-size: 1.4rem;
+    color: #4dabf7;
+    min-width: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #e6e6e6;
+}
+
+.contact-item div p:last-child {
+    color: #b0b0b0;
+    font-size: 1rem;
+}
+
+.company-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #e6e6e6;
+    margin-bottom: 2.5rem;
+    text-align: justify;
+    padding-right: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(77, 171, 247, 0.1);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.social-link:hover {
+    background: #4dabf7;
+    transform: translateY(-5px);
+    border-color: #fff;
+    box-shadow: 0 5px 15px rgba(77, 171, 247, 0.3);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    padding: 2rem 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #b0b0b0;
+    font-size: 1rem;
+}
+
+.footer-bottom p:first-child {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .footer-content {
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .footer {
+        padding: 3rem 0 1.5rem;
+    }
+    
+    .footer-title {
+        font-size: 1.6rem;
+    }
+    
+    .company-description {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-content {
+        padding: 0 1.5rem;
+    }
+    
+    .footer-title {
+        font-size: 1.4rem;
+    }
+    
+    .contact-item p {
+        font-size: 1rem;
+    }
+    
+    .company-description {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+    
+    .footer-bottom {
+        padding: 1.5rem 1.5rem 0;
+    }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.footer-section:nth-child(2) {
+    animation-delay: 0.2s;
+}
